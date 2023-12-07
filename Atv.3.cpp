@@ -1,8 +1,3 @@
-// Implemente um programa que permita cadastrar contatos telefônicos em uma agenda,
-// utilizando vetores para armazenar os nomes e números de telefone.
-// Permita que o usuário digite o código 1 para adicionar um número e 2 para mostrar os números cadastrados
-// e encerrar o software.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -13,7 +8,7 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    // Declarando Variáveis
+    // Declarando VariÃ¡veis
     int linha = 999;
     char nome[linha][250], telefone[linha][11];
     int botao;
