@@ -1,9 +1,3 @@
-//Crie um algoritmo que leia o nome, a idade, o peso e a altura de 5 pessoas, armazenando em vetores.
-//Mostre as informações solicitadas de cada pessoa e informe:
-//A maior altura e a menor altura.
-//O maior peso e menor peso;
-//A maior idade e a menor idade.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -13,7 +7,7 @@
 int main () {
     setlocale(LC_ALL,"portuguese");
 
-    //Declarando Variáveis
+    //Declarando VariÃ¡veis
     int linha = 5;
     char nome [linha] [250];
     int idade [linha], velho = INT_MIN, novo = INT_MAX;
@@ -24,7 +18,7 @@ int main () {
     //Solicitando Dados
     for ( i = 0; i < linha; i++)
     {
-        printf("Digite o %iº nome: ",i + 1);
+        printf("Digite o %iÂº nome: ",i + 1);
         gets(nome[i]);
 
         printf("Digite sua idade: ");
@@ -50,7 +44,7 @@ int main () {
     }
     
     system("cls || clear");
-    printf("Realizando Operações");
+    printf("Realizando OperaÃ§Ãµes");
     for ( i = 0; i < 3; i++)
     {
         sleep(1);
@@ -60,7 +54,7 @@ int main () {
 
     for ( i = 0; i < linha; i++)
     {
-        printf("%iº pessoa: %s \n",i + 1, nome[i]);
+        printf("%iÂº pessoa: %s \n",i + 1, nome[i]);
         printf("idade: %i \n", idade[i]);
         printf("peso: %.1f \n", peso[i]);
         printf("altura: %.2f \n", altura[i]);
