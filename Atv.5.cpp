@@ -1,8 +1,3 @@
-//Desenvolva um programa que registre as vendas de uma loja, armazenando os valores em um vetor 
-//e apresentando o total de vendas ao final. Considere que cada venda precisa do produto de um produto, 
-//seu preço e sua quantidade. Crie um menu onde o usuário possa digitar o número 1 para adicionar uma venda e 
-//o número 2 para sair do menu e exibir o total das vendas realizadas.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -13,7 +8,7 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    // Declarando Variáveis
+    // Declarando VariÃ¡veis
     int linha = 999;
     char produto[linha][250];
     int quantidade[linha];
@@ -42,7 +37,7 @@ int main()
             printf("Quantidade comprada: ");
             scanf("%i",&quantidade[j]);
 
-            printf("Preço Total desta venda: ");
+            printf("PreÃ§o Total desta venda: ");
             scanf("%f",&preco[j]);
 
             vendaTotal += preco[j];
